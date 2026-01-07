@@ -4,8 +4,8 @@
 
 ### Announcements (2 weeks before)
 Send to participants:
-- Link to OpenAI platform: https://platform.openai.com
-- Instructions to create account and add $5-10 credit
+- Link to Google Cloud Console: https://console.cloud.google.com
+- Instructions to create Google Cloud Project and enable Vertex AI
 - Link to Python installation guide
 - Repository URL (if using Git)
 
@@ -25,9 +25,9 @@ Send to participants:
 - Token counting confusion
 
 **Tips:**
-- Walk through .env setup together
-- Show OpenAI usage dashboard
-- Emphasize starting with gpt-4o-mini
+- Walk through Google Cloud Auth setup together
+- Show Google Cloud billing dashboard
+- Emphasize starting with gemini-1.5-flash
 
 ### Week 2: Conversations
 **Key Concepts:** Message history, context management, system prompts
@@ -96,10 +96,10 @@ Send to participants:
 pip install -r requirements.txt
 ```
 
-### API key not working
-1. Check .env file exists in root
-2. Verify key starts with 'sk-'
-3. Check OpenAI account has credit
+### Authentication errors
+1. Ensure `gcloud auth application-default login` was run
+2. Verify Google Cloud Project ID is correct
+3. Check Billing is enabled on the project
 4. Restart Jupyter kernel
 
 ### Jupyter won't start
@@ -114,10 +114,10 @@ jupyter notebook --generate-config
 - Implement exponential backoff
 
 ### High costs
-- Switch to gpt-4o-mini
-- Reduce max_tokens
+- Switch to gemini-1.5-flash
+- Reduce max_output_tokens
 - Implement caching
-- Show usage dashboard
+- Show billing dashboard
 
 ## Pacing Suggestions
 
@@ -165,8 +165,8 @@ jupyter notebook --generate-config
 ## Additional Resources
 
 ### For Participants
-- OpenAI Cookbook: https://github.com/openai/openai-cookbook
-- OpenAI Documentation: https://platform.openai.com/docs
+- Google GenAI SDK: https://github.com/googleapis/python-genai
+- Gemini API Docs: https://ai.google.dev/gemini-api/docs
 - Python dotenv docs: https://pypi.org/project/python-dotenv/
 
 ### For Instructors
@@ -190,7 +190,7 @@ jupyter notebook --generate-config
 
 ## Common Questions & Answers
 
-**Q: Can I use Claude/Gemini instead of OpenAI?**
+**Q: Can I use OpenAI/Claude instead of Gemini?**
 A: Yes, but you'll need to adapt the API calls. Core concepts remain the same.
 
 **Q: Do I need to know machine learning?**

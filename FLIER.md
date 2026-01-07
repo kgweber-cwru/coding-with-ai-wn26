@@ -7,7 +7,7 @@
 
 **Week 1: LLM Basics & API Fundamentals**
 • Understand tokens, parameters, and costs
-• Make your first OpenAI API calls
+• Make your first Gemini API calls
 • Build simple AI-powered scripts
 
 **Week 2: Conversational Applications**
@@ -51,7 +51,7 @@
 **Required:**
 • Basic Python (variables, functions, loops)
 • Can run Python scripts
-• OpenAI API account (~$10)
+• Google Cloud project (Vertex AI)
 
 ## FORMAT
 • 6 weekly sessions, 50 minutes

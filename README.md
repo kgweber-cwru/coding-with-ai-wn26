@@ -1,6 +1,6 @@
 # Programming with Generative AI - Technical Workshop Series
 
-A six-week hands-on workshop for learning to build applications with Large Language Models using Python and the OpenAI API.
+A six-week hands-on workshop for learning to build applications with Large Language Models using Python and the Google Vertex AI API (Gemini).
 
 ## Overview
 
@@ -11,8 +11,9 @@ This workshop series teaches participants with basic Python skills how to progra
 - Basic Python programming skills (variables, functions, loops, data structures)
 - Ability to install Python packages using pip
 - Familiarity with running Python scripts and Jupyter notebooks
-- An OpenAI API account with a valid API key
-- Estimated API costs: $5-10 for the entire course
+- A Google Cloud Project with Vertex AI API enabled
+- Google Cloud SDK (`gcloud`) installed and authenticated
+- Estimated costs: Low (using Gemini 1.5 Flash) or Free Tier eligible
 
 ## Setup Instructions
 
@@ -42,28 +43,22 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Set Up Your API Key
+### 4. Authenticate with Google Cloud
 
-1. Copy the example environment file:
+1. Ensure you have the `gcloud` CLI installed.
+2. Login to your Google Cloud account:
    ```bash
-   cp .env.example .env
+   gcloud auth login
+   ```
+3. Set your project ID:
+   ```bash
+   gcloud config set project YOUR_PROJECT_ID
+   ```
+4. Configure Application Default Credentials (ADC) for the notebooks to use:
+   ```bash
+   gcloud auth application-default login
    ```
 
-2. Edit `.env` and add your OpenAI API key:
-   ```
-   OPENAI_API_KEY=sk-your-actual-key-here
-   ```
-
-3. **Important**: Never commit your `.env` file to version control!
-
-### 5. Get Your OpenAI API Key
-
-1. Go to [platform.openai.com](https://platform.openai.com)
-2. Sign up or log in
-3. Navigate to API Keys section
-4. Create a new secret key
-5. Copy it to your `.env` file immediately (you won't be able to see it again)
-6. Add a small amount of credit ($5-10 is plenty for this course)
 
 ### 6. Launch Jupyter
 
@@ -115,16 +110,16 @@ Each week contains:
 2. **Experiment**: Modify the example code and see what happens
 3. **Complete assignments**: The weekly assignments build on each other
 4. **Ask questions**: Use the discussion time during sessions
-5. **Monitor costs**: Check your OpenAI usage dashboard regularly
+5. **Monitor costs**: Check your Google Cloud billing dashboard regularly
 6. **Save your work**: Make copies of notebooks before experimenting heavily
 
 ## Cost Management
 
 To keep costs low:
-- Use `gpt-4o-mini` for most exercises (significantly cheaper than GPT-4)
-- Set `max_tokens` limits in your API calls
+- Use `gemini-1.5-flash` for most exercises (significantly cheaper than Pro models)
+- Set `max_output_tokens` limits in your API calls
 - Start with small test datasets
-- Monitor your usage at [platform.openai.com/usage](https://platform.openai.com/usage)
+- Monitor your usage at [console.cloud.google.com/billing](https://console.cloud.google.com/billing)
 
 ## Troubleshooting
 
@@ -133,10 +128,9 @@ To keep costs low:
 pip install -r requirements.txt
 ```
 
-### API key not working
-- Check that your `.env` file is in the root directory
-- Verify the key starts with `sk-`
-- Make sure you've added billing information to your OpenAI account
+### Authentication errors
+- Ensure you have run `gcloud auth application-default login`
+- Verify your Google Cloud Project has the Vertex AI API enabled
 
 ### Jupyter not starting
 ```bash
@@ -145,15 +139,15 @@ pip install --upgrade jupyter notebook
 
 ## Resources
 
-- [OpenAI API Documentation](https://platform.openai.com/docs)
-- [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
+- [Google GenAI SDK Documentation](https://github.com/googleapis/python-genai)
+- [Gemini API Documentation](https://ai.google.dev/gemini-api/docs)
 - [Python dotenv Documentation](https://pypi.org/project/python-dotenv/)
 
 ## Getting Help
 
 - During sessions: Ask the instructor
 - Between sessions: Review the notebooks and try the examples
-- Check the OpenAI documentation for API details
+- Check the Google Cloud documentation for API details
 
 ## License
 

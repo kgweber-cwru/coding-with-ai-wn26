@@ -17,7 +17,7 @@ A 6-week hands-on coding workshop to create your own AI-powered applications
 
 **Week 1: LLM Basics & API Fundamentals**
 • Understand how LLMs work under the hood
-• Make your first OpenAI API calls
+• Make your first Gemini API calls
 • Master parameters: temperature, tokens, costs
 • Build simple AI-powered scripts
 
@@ -76,7 +76,7 @@ A 6-week hands-on coding workshop to create your own AI-powered applications
 **Required:**
 • Basic Python programming (variables, functions, loops)
 • Ability to run Python scripts and Jupyter notebooks
-• OpenAI API account (we are working on credits with our tech partners)
+• Google Cloud project with Vertex AI enabled
 
 **Helpful but not required:**
 • Familiarity with HTTP requests to APIs
@@ -108,7 +108,7 @@ A 6-week hands-on coding workshop to create your own AI-powered applications
 ### Technical Setup:
 • Python 3.10+ installed
 • Jupyter Notebook
-• OpenAI API key
+• Google Cloud SDK (gcloud CLI)
 • Virtual environment (recommended)
 • VS Code or preferred editor
 
@@ -179,7 +179,7 @@ Learn to create AI-powered applications from scratch in this hands-on 6-week cod
 
 **For:** Researchers, developers, anyone with basic Python skills
 **Format:** 6 weekly sessions, 75 minutes, live coding + exercises
-**Prerequisites:** Basic Python, OpenAI API account (~$10)
+**Prerequisites:** Basic Python, Google Cloud project
 **Dates:** [Insert dates]
 **Location:** [Insert location]
 
@@ -195,7 +195,7 @@ Learn to create AI-powered applications from scratch in this hands-on 6-week cod
 👨‍💻 Want to build AI apps, not just use them?
 
 Join our 6-week Python + AI series:
-✓ OpenAI API mastery
+✓ Google GenAI SDK mastery
 ✓ Conversational AI systems
 ✓ Embeddings & semantic search
 ✓ Complete RAG pipelines
@@ -208,4 +208,4 @@ Basic Python required
 📍 [Location]
 🔗 Register: [link]
 
-#Python #AI #MachineLearning #RAG #LLMs #OpenAI #Programming
+#Python #AI #MachineLearning #RAG #LLMs #Gemini #VertexAI #Programming
