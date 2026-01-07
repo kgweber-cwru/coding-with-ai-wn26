@@ -68,6 +68,18 @@ jupyter notebook
 
 Your browser should open automatically. Navigate to the week you're working on!
 
+## Run on Google Colab
+
+If you'd like to run these notebooks in Google Colab, use the "Open In Colab" badge at the top of each notebook or open directly:
+
+- Click the badge to launch the notebook in Colab.
+- On first run, Colab will prompt you to install dependencies. Approve installation.
+- Authenticate with Google: the notebook will call `google.colab.auth.authenticate_user()` and then you can enter your Google Cloud Project ID when prompted.
+
+Notes:
+- These notebooks install `google-genai` and `google-auth` on Colab and set the `GOOGLE_CLOUD_PROJECT` environment variable when you provide it.
+- If you prefer, set `GOOGLE_CLOUD_PROJECT` in your Colab environment or use Application Default Credentials.
+
 ## Workshop Structure
 
 Each week contains:
