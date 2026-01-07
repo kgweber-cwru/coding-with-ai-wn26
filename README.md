@@ -128,7 +128,7 @@ Each week contains:
 ## Cost Management
 
 To keep costs low:
-- Use `gemini-1.5-flash` for most exercises (significantly cheaper than Pro models)
+- Use `gemini-2.5-flash` for most exercises (significantly cheaper than Pro models)
 - Set `max_output_tokens` limits in your API calls
 - Start with small test datasets
 - Monitor your usage at [console.cloud.google.com/billing](https://console.cloud.google.com/billing)
