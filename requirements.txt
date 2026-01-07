@@ -1,0 +1,19 @@
+# GenAI Series 2: Programming with LLMs
+# Requirements for Python environment
+
+# Core dependencies
+openai>=1.12.0
+python-dotenv>=1.0.0
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Data processing and analysis
+numpy>=1.24.0
+pandas>=2.0.0
+
+# For embeddings and similarity search
+scikit-learn>=1.3.0
+
+# Optional but recommended
+ipywidgets>=8.0.0
+matplotlib>=3.7.0
