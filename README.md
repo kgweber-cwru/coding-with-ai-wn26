@@ -128,7 +128,7 @@ Each week contains:
 ## Cost Management
 
 To keep costs low:
-- Use `gemini-2.5-flash` for most exercises (significantly cheaper than Pro models)
+- Use `gemini-2.5-flash-lite` for most exercises (significantly cheaper than Pro models)
 - Set `max_output_tokens` limits in your API calls
 - Start with small test datasets
 - Monitor your usage at [console.cloud.google.com/billing](https://console.cloud.google.com/billing)
@@ -164,3 +164,22 @@ pip install --upgrade jupyter notebook
 ## License
 
 Educational materials for CWRU School of Medicine workshop series.
+ 
+## Troubleshooting: Colab and GitHub 404s
+
+- Colab does not read local `.env` files. In Colab, use the PROJECT_ID prompt at the top of the notebook or set the environment variable in a cell:
+
+   ```python
+   import os
+   os.environ['GOOGLE_CLOUD_PROJECT'] = 'your-project-id'
+   ```
+
+- If you see a `404 Not Found` when opening via the "Open in Colab" badge, the badge may point to a branch or path that doesn't contain the notebook. Fix options:
+   - Push the notebooks to the branch referenced by the badge (commonly `main`).
+   - Or update the badge URL to the repository branch that contains the notebooks.
+
+- If Colab prompts for GitHub access or fails to load: sign in to Colab and authorize GitHub, then retry using the badge or use `File → Open notebook → GitHub` and search the repo.
+
+- Workarounds: if issues persist, use `File → Save a copy in Drive` from the Colab error view or open the notebook directly from GitHub and copy into Colab.
+
+- Transient errors: GitHub API rate limits or transient failures can cause temporary 404s — wait a minute and retry if everything else looks correct.

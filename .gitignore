@@ -30,3 +30,6 @@ Thumbs.db
 *.log
 cache/
 data/
+
+# Ignore credentials and project files
+creds/

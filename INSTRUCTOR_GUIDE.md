@@ -27,7 +27,7 @@ Send to participants:
 **Tips:**
 - Walk through Google Cloud Auth setup together
 - Show Google Cloud billing dashboard
-- Emphasize starting with gemini-2.5-flash
+- Emphasize starting with gemini-2.5-flash-lite
 
 ### Week 2: Conversations
 **Key Concepts:** Message history, context management, system prompts
@@ -114,7 +114,7 @@ jupyter notebook --generate-config
 - Implement exponential backoff
 
 ### High costs
-- Switch to gemini-2.5-flash
+- Switch to gemini-2.5-flash-lite
 - Reduce max_output_tokens
 - Implement caching
 - Show billing dashboard
