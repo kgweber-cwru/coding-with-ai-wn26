@@ -134,14 +134,8 @@ The GitHub notebook is the "master copy." When you open it, you're viewing the o
 As you progress through the seminar, you'll work with datasets, save results, and manage files. Connecting Drive allows your Colab notebooks to access files from your Drive directly.
 
 ### Step 1: Mount Google Drive in Your Notebook
-In your Colab notebook, add this code cell at the top:
+In your Colab notebook, run the code in the "Step 1: Test Google Drive Connection" section. You may get a warning that Google didn't write this notebook. That's OK. Select `Run Anyway`.
 
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-*[INSERT IMAGE: Code cell in Colab with mount code]*
 
 ### Step 2: Run the Cell
 1. Click the **Play button** (▶) next to the cell
@@ -159,7 +153,7 @@ After clicking "Allow," you should see:
 ```
 Mounting Google Drive...
 Mounted at /content/drive
-✓ SUCCESS: Successfully wrote to /content/drive/My Drive/cwru-setup-test.txt
+✅ SUCCESS: Successfully wrote to /content/drive/My Drive/cwru-setup-test.txt
 Check your Google Drive for this file!
 ```
 
@@ -167,7 +161,7 @@ This means your Drive is now connected and accessible to your code.
 
 
 ### Step 4: Access Your Drive Files
-Now your notebook can read and write files to your Drive:
+Now your notebook can read and write files to your Drive. You could execute calls like this:
 ```python
 # Example: Read a file from your Drive
 import pandas as pd
@@ -189,6 +183,8 @@ We have provided **$50 in Google Cloud educational credits** for this course. Th
 - ✅ Run experiments with higher rate limits
 - ✅ Access all premium Google AI services
 - ✅ Scale your projects beyond free tier limits
+
+Your credits will remain valid for a year after the seminar starts, so you're free to continue to use them to experiment and try new things.
 
 **This course uses Vertex AI (built on Google Cloud), so you MUST redeem your credits to play!**
 
@@ -287,7 +283,7 @@ Before Week 1 begins, confirm you have completed:
 
 ### "I don't see an 'Open in Colab' button on the notebook"
 - **Solution:** Use the manual link method (Part 3, Method 2) to open the notebook
-- **Or:** Contact your instructor to add the Colab badge to the repository
+- **Or:** Contact Kate Weberto add the Colab badge to the repository
 
 ### "I can't save a copy to my Drive"
 - **Check:** Are you logged into your Google account?
@@ -335,7 +331,7 @@ Once you've completed all steps above, you're set for Day 1.
 **A few final tips:**
 - All your work is automatically saved in Google Drive - no need to worry about losing code!
 - You can access your notebooks from any computer with a browser
-- If you need help during the seminar, ask your instructor - we're here for you!
+- If you need help during the seminar, ask - we're here for you!
 
 **See you soon!**
 
