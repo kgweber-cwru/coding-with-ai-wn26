@@ -59,11 +59,11 @@ You'll use your CWRU Google account to use Colab (same one you'll use for Drive 
 
 ### Step 2: Access a Notebook from GitHub
 1. Go to the course repository: [github.com/kgweber-cwru/coding-with-ai-wn26](https://github.com/kgweber-cwru/coding-with-ai-wn26)
-2. Navigate to **week-1-llm-basics-and-api**
-3. Click on **concepts.ipynb** (or any `.ipynb` file you want to open)
+2. Navigate to **week-0**
+3. Click on **setup_verification.ipynb** (or any `.ipynb` file you want to open)
 4. You'll see a preview of the notebook in GitHub
 
-*[INSERT IMAGE: GitHub repository with week-1 folder and concepts.ipynb highlighted]*
+*[INSERT IMAGE: GitHub repository with week-0 folder and setup_verification.ipynb highlighted]*
 
 ### Step 3: Open Notebook in Google Colab
 **Method 1: From GitHub (Recommended)**
