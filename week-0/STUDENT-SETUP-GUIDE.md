@@ -27,14 +27,14 @@ This guide walks you through each step. **Estimated time: 30-40 minutes**
 - Verify your email address
 - **You now have a GitHub account!**
 
-*[INSERT IMAGE: Screenshot of github.com homepage with "Sign up" button highlighted]*
+![Github Sign-In](images/github_signin.png)
 
 ### Step 2: Navigate to the Course Repository
 - Open this link in your browser: [github.com/kgweber-cwru/coding-with-ai-wn26](https://github.com/kgweber-cwru/coding-with-ai-wn26)
 - You should see a folder-like structure with course materials
 - Look for the "week-0" folder
 
-*[INSERT IMAGE: Screenshot of the repository main page showing folder structure]*
+![Full view of repo](images/github_repo_screenshot.png)
 
 ### Step 3: Star the Repository (Optional)
 - Click the **"Star"** button (top-right of the repository)
@@ -63,8 +63,7 @@ You'll use your CWRU Google account to use Colab (same one you'll use for Drive 
 3. Click on **setup_verification.ipynb** (or any `.ipynb` file you want to open)
 4. You'll see a preview of the notebook in GitHub
 
-*[INSERT IMAGE: GitHub repository with week-0 folder and setup_verification.ipynb highlighted]*
-
+![Preview Notebook](images/view_workbook.png)
 ### Step 3: Open Notebook in Google Colab
 **Method 1: From GitHub (Recommended)**
 
@@ -72,13 +71,11 @@ In the GitHub preview of the `.ipynb` file, look for the **Colab badge/button** 
 - Click the **"Open in Colab"** button (or similar badge)
 - The notebook will automatically open in Google Colab in a new tab
 
-*[INSERT IMAGE: Colab badge in GitHub preview, showing "Open in Colab" button]*
-
 **Method 2: Manual Link**
 
 If you don't see the badge, you can construct the link:
 - Replace `github.com` with `colab.research.google.com/github` in the URL
-- Example: `https://colab.research.google.com/github/kgweber-cwru/coding-with-ai-wn26/blob/main/week-1-llm-basics-and-api/concepts.ipynb`
+- Example: `https://colab.research.google.com/github/kgweber-cwru/coding-with-ai-wn26/blob/main/week-0/setup_verification.ipynb`
 
 ### Step 4: Review the Notebook in Colab
 - The notebook is now open in Colab, but it's **read-only** (you can't edit it yet)
@@ -86,7 +83,12 @@ If you don't see the badge, you can construct the link:
 - Scroll through to see what you'll be working on
 - ✅ If you can read the code and explanations, you're all set!
 
-*[INSERT IMAGE: Notebook open in Google Colab, showing code cells]*
+![Colab Loaded](images/colab_loaded.png)
+
+
+‼️ Important! You may see a banner offering you student pricing for Google products. 
+**DO NOT** take them up on this offer yet! We don't want that offer tangled up 
+with the student credits that come with this course
 
 ---
 
@@ -101,30 +103,28 @@ The GitHub notebook is the "master copy." When you open it, you're viewing the o
 3. Choose where in your Drive (or just accept the default: `Colab Notebooks` folder)
 4. Click **OK**
 
-*[INSERT IMAGE: File menu and "Save a copy in Drive" option highlighted]*
+![Save a Copy in Drive](images/save_a_copy_in_drive.png)*
 
 ### Step 2: Switch to Your Copy
 - A new tab will automatically open with **your personal copy**
-- Notice the file name changes to something like "Copy of concepts.ipynb"
+- Notice the file name changes to something like "Copy of setup_verification.ipynb"
 - **This is now YOUR notebook** - all your changes save automatically to your Drive
 - You can edit the code, add notes, run experiments
 
-*[INSERT IMAGE: New Colab window with file saved, showing "Copy of concepts.ipynb" in title]*
+![workbook copy](images/workbook_copy.png)
 
 ### Step 3: Rename Your Copy (Optional but Recommended)
-1. Click the filename at the top of Colab ("Copy of concepts")
+1. Click the filename at the top of Colab ("Copy of setup_verification.ipynb")
 2. Edit it to something clear like "Week1-Concepts-[YourName]"
 3. Press Enter to save the new name
 
-*[INSERT IMAGE: Colab filename editor showing rename in progress]*
 
 ### Step 4: Verify Your Copy is in Drive
 1. Go to [drive.google.com](https://drive.google.com) in a new tab
 2. Look for your notebook file (should be in "Colab Notebooks" folder or where you saved it)
 3. ✅ Your copy is safely stored in your Drive and will persist between sessions
 
-*[INSERT IMAGE: Google Drive showing saved Colab notebook]*
-
+![alt text](images/notebook_in_drive.png)
 ---
 
 ## Part 4: Connect Google Drive to Colab (For File Access)
