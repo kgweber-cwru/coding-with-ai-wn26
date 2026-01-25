@@ -26,7 +26,6 @@ This guide walks you through each step. **Estimated time: 30-40 minutes**
 - Click "Sign up" in the top-right corner
 - Follow the registration process (email, password, username)
 - Verify your email address
-- **You now have a GitHub account!**
 
 ![Github Sign-In](images/github_signin.png)
 
@@ -56,11 +55,11 @@ Google Colab is a **free, cloud-based coding environment** where you can write a
 - ✅ Easy sharing and collaboration
 
 ### Step 1: Use your CWRU Google Credentials
-You'll use your CWRU Google account to use Colab (same one you'll use for Drive and GCP).
+You'll use your CWRU Google account to use Colab (Your everyday CWRU Gmail, etc. account. You'll also use this for Drive and Google Cloud Platform (GCP)).
 
 ### Step 2: Access a Notebook from GitHub
-1. Go to the course repository: [github.com/kgweber-cwru/coding-with-ai-wn26](https://github.com/kgweber-cwru/coding-with-ai-wn26)
-2. Navigate to **week-0**
+1. Go to the course repository if you aren't already there: [github.com/kgweber-cwru/coding-with-ai-wn26](https://github.com/kgweber-cwru/coding-with-ai-wn26)
+2. Navigate to `week-0`
 3. Click on **setup_verification.ipynb** (or any `.ipynb` file you want to open)
 4. You'll see a preview of the notebook in GitHub
 
@@ -89,7 +88,7 @@ If you don't see the badge, you can construct the link:
 
 ‼️ Important! You may see a banner offering you student pricing for Google products. 
 **DO NOT** take them up on this offer yet! We don't want that offer tangled up 
-with the student credits that come with this course
+with the student credits that come with this seminar.
 
 ---
 
@@ -116,7 +115,7 @@ The GitHub notebook is the "master copy." When you open it, you're viewing the o
 
 ### Step 3: Rename Your Copy (Optional but Recommended)
 1. Click the filename at the top of Colab ("Copy of setup_verification.ipynb")
-2. Edit it to something clear like "Week1-Concepts-[YourName]"
+2. Edit it to something clear like "Week0-[YourName]"
 3. Press Enter to save the new name
 
 
@@ -283,7 +282,7 @@ Before Week 1 begins, confirm you have completed:
 
 ### "I don't see an 'Open in Colab' button on the notebook"
 - **Solution:** Use the manual link method (Part 3, Method 2) to open the notebook
-- **Or:** Contact Kate Weberto add the Colab badge to the repository
+- **Or:** Contact Kate Weber to add the Colab badge to the repository
 
 ### "I can't save a copy to my Drive"
 - **Check:** Are you logged into your Google account?
@@ -307,6 +306,9 @@ Before Week 1 begins, confirm you have completed:
 - **Check:** Did you enable the **Vertex AI API** in your project? (Part 6, Step 2)
 - **Check:** Did you enter the correct **Project ID** when prompted?
 
+### "Notebooks beyond this week aren't running correctly"
+
+* We're building this plane while we're flying it, friends
 ---
 
 ## Support
