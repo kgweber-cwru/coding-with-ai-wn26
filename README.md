@@ -8,28 +8,30 @@ Principally designed to be run on Google Colab, but with the ability to run loca
 
 This workshop series teaches participants with basic Python skills how to programmatically interact with LLMs, building progressively from simple API calls to conversational agents with retrieval-augmented generation (RAG).
 
+> Before Week 1: finish the Week 0 setup. Follow the guide and run the verification notebook so you are ready to code on day one.
+> - Setup guide: [week-0/STUDENT-SETUP-GUIDE.md](week-0/STUDENT-SETUP-GUIDE.md)
+> - Verification notebook (with Colab badge): [week-0/setup_verification.ipynb](week-0/setup_verification.ipynb)
+
 ## Prerequisites
 
 - Basic Python programming skills (variables, functions, classes, loops, data structures)
 - Ability to install Python packages using pip
 - Familiarity with running Python scripts and Jupyter notebooks
-- A Google Cloud Project with Vertex AI API enabled
-- Google Cloud SDK (`gcloud`) installed and authenticated
-- Estimated costs: Low (using Gemini 1.5 Flash) or Free Tier eligible
-
-
+- A Google Cloud Project with Vertex AI API enabled (see Week 0 guide for step-by-step)
+- Redeemed Google Cloud educational credits and linked billing account (Week 0 guide)
+- Project ID on hand for notebooks; Google Cloud SDK (`gcloud`) installed if running locally
+- Estimated costs: Low (using `gemini-2.5-flash-lite`) or Free Tier eligible
 
 ## Run on Google Colab
 
 ### Set up your environment and GCP world according to instructions in the [Week 0 Setup Guide](week-0/STUDENT-SETUP-GUIDE.md)
 
-Generally speaking, once you're set up:
+Mini-checklist for Colab users (mirrors the Week 0 verification notebook):
 
-If you'd like to run these notebooks in Google Colab, use the "Open In Colab" badge at the top of each notebook or open directly:
-
-- Click the badge to launch the notebook in Colab.
-- On first run, Colab will prompt you to install dependencies. Approve installation.
-- Authenticate with Google: the notebook will call `google.colab.auth.authenticate_user()` and then you can enter your Google Cloud Project ID when prompted.
+- Open the notebook via its "Open in Colab" badge.
+- File → Save a copy in Drive so you have your own editable copy.
+- Run the first cell to install/auth; when prompted, authenticate and enter your Project ID.
+- Run the Gemini test call at the end of the notebook; confirm you see a model response.
 
 Notes:
 - These notebooks install `google-genai` and `google-auth` on Colab and set the `GOOGLE_CLOUD_PROJECT` environment variable when you provide it.
@@ -70,19 +72,29 @@ Each week contains:
 - Error handling and reliability
 - Cost management
 - Real-world application design
-- 
+
 ### Bonus Content
 - Using Gradio to put a simple UI onto your work - a worked example
 
 ## Tips for Success
 
-1. **Be ready with the Week_0 material** complete so you're ready to go
-1. **Read before the session**: Review the concepts notebook before each weekly meeting
-2. **Experiment**: Modify the example code and see what happens
-3. **Complete assignments**: The weekly assignments build on each other
-4. **Ask questions**: Use the discussion time during sessions
-5. **Monitor costs**: Check your Google Cloud billing dashboard regularly
-6. **Save your work**: Make copies of notebooks before experimenting heavily
+1. **Be ready with the Week 0 material** complete so you're ready to go
+2. **Read before the session**: Review the concepts notebook before each weekly meeting
+3. **Experiment**: Modify the example code and see what happens
+4. **Complete assignments**: The weekly assignments build on each other
+5. **Ask questions**: Use the discussion time during sessions
+6. **Monitor costs**: Check your Google Cloud billing dashboard regularly
+7. **Save your work**: Make copies of notebooks before experimenting heavily
+
+### Quick verification (Week 0)
+
+- Drive mounted and writable (saw the `cwru-setup-test.txt` message)
+- Dependencies installed (`google-genai`, `google-auth` installed in Colab)
+- Project ID set in the session
+- Vertex AI API enabled in your project
+- Gemini test call returned a response (no 403/permission errors)
+
+If any of these fail, rerun [week-0/setup_verification.ipynb](week-0/setup_verification.ipynb) and follow the prompts.
 
 ## Cost Management
 
@@ -103,6 +115,10 @@ pip install -r requirements.txt
 - Ensure you have run `gcloud auth application-default login`
 - Verify your Google Cloud Project has the Vertex AI API enabled
 
+### Week 0 setup hiccups
+- Re-run the Week 0 verification notebook to pinpoint failures (auth, Project ID, API enablement, billing/credits)
+- Double-check the Week 0 guide steps for enabling Vertex AI and redeeming credits
+
 ### Jupyter not starting
 ```bash
 pip install --upgrade jupyter notebook
@@ -113,6 +129,8 @@ pip install --upgrade jupyter notebook
 - [Google GenAI SDK Documentation](https://github.com/googleapis/python-genai)
 - [Gemini API Documentation](https://ai.google.dev/gemini-api/docs)
 - [Python dotenv Documentation](https://pypi.org/project/python-dotenv/)
+- Week 0 verification notebook: [week-0/setup_verification.ipynb](week-0/setup_verification.ipynb)
+- Week 0 setup guide: [week-0/STUDENT-SETUP-GUIDE.md](week-0/STUDENT-SETUP-GUIDE.md)
 
 ## Getting Help
 
@@ -123,7 +141,7 @@ pip install --upgrade jupyter notebook
 ## License
 
 Educational materials for CWRU School of Medicine workshop series.
- 
+
 ## Troubleshooting: Colab and GitHub 404s
 
 - Colab does not read local `.env` files. In Colab, use the PROJECT_ID prompt at the top of the notebook or set the environment variable in a cell:
